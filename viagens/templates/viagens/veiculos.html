@@ -1,0 +1,42 @@
+{% extends 'center.html' %}
+
+{% block content %}
+<div class="layout-container-3 p-5">
+  <h1 class="text-center card-header-3">Veículos</h1>
+  <div class="row layout-cards-3">
+    {% for carros in carro %}
+    <div class="col-md-4 mt-2">
+      <div class="card-veiculo-2 h-100">
+        {% if carros.imagem %}
+        <img
+          src="{{ carros.imagem_ajustada.url }}"
+          class="card-veiculo-img-top"
+          alt="{{ carros.nome_carro }}"
+        />
+        {% endif %}
+        <div class="card-veiculo-body d-flex flex-column">
+          <h5 class="card-veiculo-title">{{ carros.nome_carro }}</h5>
+          <div class="card-veiculo-text">
+            <h1 class="card-veiculo-preco">{{ carros.preco }}</h1>
+            <p>{{ carros.descricao }}</p>
+          </div>
+          <div class="mt-auto card-veiculo-btns">
+            <a
+              href="{% url 'viagens:description_carros' carros.pk %}"
+              class="btn-veiculo-primary"
+              target="_blank"
+              >Saber mais</a
+            >
+            <a
+              href="{% url 'viagens:description_contato' %}"
+              class="btn-veiculo-primary"
+              >Contato</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

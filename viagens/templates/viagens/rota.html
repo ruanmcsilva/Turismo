@@ -1,0 +1,40 @@
+{% extends 'center.html' %}
+
+{% block content %}
+<div class="turismo-hero">
+    <h1 class="text-titulo-rota">Explore as Melhores Rotas Turísticas</h1>
+    <p class="text-titulo-p-rota">Descubra aventuras inesquecíveis e os destinos mais bonitos.</p>
+</div>
+
+<div class="turismo-rotas">
+    <div class="container">
+        <div class="row">
+            {% for rotas in rota %}
+            <div class="col-md-12 mt-4">
+                <div class="turismo-card-horizontal">
+                    {% if rotas.imagem_rota %}
+                    <div class="turismo-card-img-container">
+                        <img src="{{ rotas.imagem_ajustada.url }}" class="turismo-card-img" alt="{{ rotas.nome_rota }}">
+                    </div>
+                    {% endif %}
+                    <div class="turismo-card-body">
+                        <h4 class="turismo-card-title">{{ rotas.nome_rota }}</h4>
+                        <p class="turismo-card-text">{{ rotas.descricao_rota }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<h1 class="text_video">O que lhe Espera</h1>
+<div class="video_conteiner">
+    <iframe width="800" height="500" src="https://www.youtube.com/embed/r1sjeMNVb7A?si=CGIjyY6eM8_AcD0s" 
+    title="YouTube video player" f
+    rameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+    </iframe>
+</div>
+{% endblock %}

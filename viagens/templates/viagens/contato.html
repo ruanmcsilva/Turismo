@@ -1,0 +1,30 @@
+{% extends 'center.html' %}
+{% load static %}
+
+{% block content %}
+<h1 class="text-center title">Contato</h1>
+<div class="body-card-contato">
+    <div class="container-contaro">
+        <div class="card-contato">
+            <img class="img-contato" src="{% static 'css/social.png' %}" alt="Visa">
+            <h3 class="card-contato-titulo">WhatsApp</h3>
+            <p class="card-contato-text">contato@email.com</p>
+        </div> 
+        <div class="card-contato">
+            <img src="{% static 'css/instagram_icon.png' %}" alt="Ícone Email">
+            <h3 class="card-contato-titulo">Instagram</h3>
+            <p class="card-contato-text">contato@email.com</p>
+        </div> 
+        <div class="card-contato">
+            <img src="{% static 'css/email.png' %}" alt="Ícone Email">
+            <h3 class="card-contato-titulo">Email</h3>
+            <p class="card-contato-text">contato@email.com</p>
+        </div> 
+        <div class="card-contato">
+            <img src="{% static 'css/maps.png' %}" alt="Ícone Email">
+            <h3 class="card-contato-titulo">Maps</h3>
+            <p class="card-contato-text">contato@email.com</p>
+        </div>
+    </div>
+</div>
+{% endblock%}

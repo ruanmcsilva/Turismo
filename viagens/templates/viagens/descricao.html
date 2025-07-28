@@ -1,0 +1,50 @@
+{% extends 'center.html' %}
+{% load static %}
+{% block content %}
+<div class="comparacao-praias-container">
+    <h1 class="title-praias">Descrição Das Praias</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card-praia">
+                <div class="row no-gutters">
+                    <div class="col-md-6">
+                        <div id="carouselExampleCaptionsPraias" class="carousel slide custom-carousel-container-praias" data-bs-ride="carousel">
+                            <div class="carousel-inner custom-carousel-inner-praias">
+                                <div class="carousel-item active">
+                                    <img src="{{local.imagem_praia1.url}}" class="" alt="Praia 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{{local.imagem_praia1.url}}" class="" alt="Praia 2">
+                                </div>
+                                <div class="carousel-item-descricao">
+                                    <img src="{% static 'img/praia/praia3.jpg' %}" class="" alt="Praia 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptionsPraias" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptionsPraias" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="info-card-praia">
+                            <div class="descricaopraia">
+                                <h2>{{ local.nome }}</h2>
+                                <p>{{local.descricao}}</p>
+                            </div>
+                                
+                            <div class="mt-auto btn-container">
+                                <a href="{% url 'viagens:description_contato' %}" class="card-link btn-custom">Contato</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

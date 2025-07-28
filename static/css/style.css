@@ -1,0 +1,1698 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* index.html - Estilos Padrão (Desktop) */
+.container {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #004085 !important;
+}
+
+.card-text h1 {
+  font-size: 2em;
+  color: #004085 !important;
+  margin: 10px 0;
+}
+
+.card-text p {
+  color: #004085 !important;
+  text-align: left;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limita o texto a 2 linhas */
+  -webkit-box-orient: vertical;
+  overflow: hidden; /* Esconde o restante do texto */
+  max-width: 100%;
+}
+
+.btn-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn-custom {
+  display: inline-block;
+  background-color: #004085;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn-custom:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.carousel-container {
+  max-width: 1230px; /* Reduzir a largura máxima para alinhar melhor com as colunas dos cards */
+  width: 100%;
+  border-radius: 10px; /* Adiciona bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra para um efeito de elevação */
+  overflow: hidden; /* Garante que os itens internos não escapem das bordas arredondadas */
+}
+
+.carousel-inner {
+  display: flex;
+  flex-direction: row; /* Assegura que todas as imagens do carrossel tenham o mesmo tamanho */
+}
+
+.carousel-item {
+  height: 500px; /* Define uma altura fixa para os itens do carrossel */
+  transition: transform 0.6s ease-in-out; /* Suaviza a transição entre os itens do carrossel */
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%; /* Preencher completamente a área do container */
+  object-fit: cover;
+  border-radius: 10px; /* Garante que a imagem também tenha bordas arredondadas */
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* center.html - Estilos Padrão (Desktop) */
+.p-index #content {
+  flex: 1;
+}
+
+.navbar {
+  background-color: #347c9b;
+  color: #ffffff;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: white;
+}
+
+.navbar .nav-link:hover {
+  color: #d4d4d4;
+}
+
+.carousel-item {
+  transition: transform 1s ease, opacity 0.5s ease-in-out;
+}
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+}
+
+/* descricao.html - Estilos Padrão (Desktop) */
+.comparacao-praias-container {
+  margin: 20px auto;
+  text-align: center;
+  max-width: 1400px;
+  overflow-x: hidden;
+  font-family: "YourChosenFont", sans-serif; /* Substitua pela fonte escolhida */
+  color: #333; /* Cor do texto */
+}
+
+.card-praia {
+  background-color: #ffffff; /* Fundo branco */
+  padding: 20px; /* Aumente o padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra mais suave */
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out; /* Adicione uma transição */
+  min-height: 400px; /* Altura mínima do card */
+}
+
+.card-praia:hover {
+  transform: translateY(-10px); /* Efeito de elevação ao passar o mouse */
+}
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.col-md-6 {
+  display: flex;
+  align-items: stretch;
+  padding: 15px;
+}
+
+.custom-carousel-container-praias {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+.custom-carousel-inner-praias img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.info-card-praia {
+  background-color: #ffffff; /* Cor de fundo suave */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  flex: 1; /* Faz o card de informação ocupar o espaço disponível */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.descricaopraia {
+  margin-top: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.descricaopraia h2 {
+  margin-top: 0; /* Remove qualquer margem superior */
+  padding-top: 0; /* Remove qualquer padding superior */
+  position: relative;
+  top: -100px; /* Ajusta o valor para mover o título mais para cima */
+}
+
+.descricaopraia h2 {
+  font-size: 28px; /* Tamanho maior para o título */
+  font-weight: bold;
+  color: #000000; /* Cor do texto */
+}
+
+.descricaopraia p {
+  font-size: 18px; /* Aumente o tamanho do texto */
+  color: #000000;
+  margin-bottom: 10px; /* Espaçamento entre os parágrafos */
+  text-align: left;
+}
+
+.title-praias {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px; /* Espaço abaixo do título */
+  color: #000000;
+}
+
+/* passeio.html - Estilos Padrão (Desktop) */
+
+.layout-container {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: 0 15px;
+}
+
+.card-custom {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* --- Alteração aqui para deixar o card mais estreito --- */
+  max-width: 476px; /* Ou o valor que você preferir, como 300px, 400px, etc. */
+  margin-left: auto; /* Centraliza o card na horizontal */
+  margin-right: auto; /* Centraliza o card na horizontal */
+  /* -------------------------------------------------------- */
+}
+
+.card-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-custom-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card-custom-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #004085 !important;
+}
+
+.card-custom-text h1 {
+  font-size: 2em;
+  color: #004085 !important;
+  margin: 10px 0;
+}
+
+.card-custom-text p {
+  color: #004085 !important;
+  text-align: left;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.card-custom-btns {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn-primary-custom {
+  display: inline-block;
+  background-color: #004085;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn-primary-custom:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.card-custom-img-top {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
+}
+
+/* ecologica.html - Estilos Padrão (Desktop) */
+
+.turismo-hero {
+  background-color: #ffffff; /* Cor de fundo alternativa */
+  padding: 60px 0;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+.text-titulo-rota,
+.text-titulo-p-rota {
+  color: #000000;
+}
+
+.turismo-hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.turismo-hero p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.turismo-rotas {
+  padding: 20px 0;
+}
+
+.turismo-card-horizontal {
+  display: flex;
+  flex-direction: row;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 20px;
+  overflow: hidden;
+  align-items: stretch; /* Garante que a imagem e o corpo tenham a mesma altura */
+}
+
+.turismo-card-horizontal:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.turismo-card-img-container {
+  width: 40%;
+  overflow: hidden;
+  height: 100%; /* Ajusta a altura do contêiner para ser igual à do card */
+}
+
+.turismo-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem se ajuste ao espaço sem distorção */
+}
+
+.turismo-card-body {
+  padding: 20px;
+  text-align: left;
+  width: 60%;
+  display: flex;
+  flex-direction: column; /* Ajuste a direção do flex conforme necessário */
+  justify-content: center; /* Adicione outras propriedades conforme necessário */
+}
+
+.turismo-card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.turismo-card-text {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+.turismo-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.turismo-btn:hover {
+  background-color: #0056b3;
+}
+
+.text_video {
+  text-align: center;
+  margin-top: -50;
+}
+
+.video_conteiner {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 10px;
+}
+
+/* pousada.html - Estilos Padrão (Desktop) */
+.comparacao-pousadas-container {
+  margin: 20px auto;
+  text-align: center;
+  max-width: 1400px;
+  overflow-x: hidden;
+  font-family: "YourChosenFont", sans-serif; /* Substitua pela fonte escolhida */
+  color: #333; /* Cor do texto */
+}
+
+.card-pousada {
+  background-color: #ffffff; /* Fundo branco */
+  padding: 20px; /* Aumente o padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra mais suave */
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out; /* Adicione uma transição */
+  min-height: 400px; /* Altura mínima do card */
+  width: 100%; /* Alterado para 100% */
+}
+
+.card-pousada:hover {
+  transform: translateY(-10px); /* Efeito de elevação ao passar o mouse */
+}
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.col-md-6 {
+  display: flex;
+  align-items: stretch;
+  padding: 15px;
+}
+
+.custom-carousel-container {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+.custom-carousel-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.info-cardPousada {
+  background-color: #00000000; /* Cor de fundo suave */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  flex: 1; /* Faz o card de informação ocupar o espaço disponível */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.descricao-pousada {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.descricao-pousada h2 {
+  font-size: 28px; /* Tamanho maior para o título */
+  font-weight: bold;
+  color: #000000; /* Cor do texto */
+  text-align: center; /* Centraliza o título */
+  margin-bottom: 100px;
+}
+
+.descricao-pousada p {
+  font-size: 18px; /* Aumente o tamanho do texto */
+  color: #000000;
+  margin-bottom: 10px; /* Espaçamento entre os parágrafos */
+  text-align: left;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px; /* Espaço abaixo do título */
+  color: #000000;
+}
+
+/* veiculos.html - Estilos Padrão (Desktop) */
+
+/* Estilo personalizado - Página de Veículos */
+
+.layout-container-3 {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+.card-veiculo-2 {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card-veiculo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-veiculo-img-top {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
+}
+
+.card-veiculo-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card-veiculo-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #004085 !important;
+}
+
+.card-veiculo-text h1 {
+  font-size: 2em;
+  color: #004085 !important;
+  margin: 10px 0;
+}
+
+.card-veiculo-text p {
+  color: #004085 !important;
+  text-align: left;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.card-veiculo-btns {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.btn-veiculo-primary {
+  display: inline-block;
+  background-color: #004085;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn-veiculo-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* descricaocarro.html - 
+Estilos Padrão (Desktop) */
+.comparacao-veiculos-container {
+  margin: 20px auto;
+  text-align: center;
+  max-width: 1800px;
+  overflow-x: hidden;
+  font-family: "YourChosenFont", sans-serif; /* Substitua pela fonte escolhida */
+  color: #ff1e1e; /* Cor do texto */
+}
+
+.card-veiculo {
+  background-color: #ffffff; /* Fundo branco */
+  padding: 0; /* Aumente o padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra mais suave */
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out; /* Adicione uma transição */
+  min-height: 400px; /* Altura mínima do card */
+}
+
+.card-veiculo:hover {
+  transform: translateY(-10px); /* Efeito de elevação ao passar o mouse */
+}
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.col-md-6 {
+  display: flex;
+  align-items: stretch;
+  padding: 15px;
+}
+
+.custom-carousel-container {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+.custom-carousel-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.info-cardVeiculo {
+  background-color: #ffffff00; /* Cor de fundo suave */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  flex: 1; /* Faz o card de informação ocupar o espaço disponível */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px; /* Espaço abaixo do título */
+  color: #000000;
+}
+
+.descricaoveiculo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.descricaoveiculo h2 {
+  font-size: 28px; /* Tamanho maior para o título */
+  font-weight: bold;
+  color: #000000; /* Cor do texto */
+  text-align: center; /* Centraliza o título */
+  margin-bottom: 100px;
+}
+
+.descricaoveiculo p {
+  font-size: 18px; /* Aumente o tamanho do texto */
+  color: #000000;
+  margin-bottom: 10px; /* Espaçamento entre os parágrafos */
+  text-align: left;
+}
+
+/* Contato - Estilos Padrão (Desktop) */
+.body-card-contato {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  min-height: 10px;
+}
+.container-contaro {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card-contato {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center; /* Centraliza o conteúdo do card */
+  width: 250px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Organiza os itens na vertical */
+  align-items: center;
+}
+
+.card-contato:hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.card-contato img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 20%;
+  margin-bottom: 10px;
+}
+
+.card-contato-titulo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-contato-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Estilos de Título Genérico */
+h1.title {
+  margin-bottom: 20px; /* Ajuste conforme necessário */
+  text-align: center;
+  color: #000000;
+}
+
+/* descricaopasseio.html - Estilos Padrão (Desktop) */
+.comparacao-destino-container {
+  margin: 20px auto;
+  text-align: center;
+  max-width: 1800px;
+  overflow-x: hidden;
+  font-family: "YourChosenFont", sans-serif; /* Substitua pela fonte escolhida */
+  color: #ff1e1e; /* Cor do texto */
+}
+
+.card-destino {
+  background-color: #ffffff; /* Fundo branco */
+  padding: 0; /* Aumente o padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra mais suave */
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out; /* Adicione uma transição */
+  min-height: 400px; /* Altura mínima do card */
+}
+
+.card-destino:hover {
+  transform: translateY(-10px); /* Efeito de elevação ao passar o mouse */
+}
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.col-md-6 {
+  display: flex;
+  align-items: stretch;
+  padding: 15px;
+}
+
+.custom-carousel-container {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+.custom-carousel-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.info-cardDestino {
+  background-color: #ffffff00; /* Cor de fundo suave */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  flex: 1; /* Faz o card de informação ocupar o espaço disponível */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px; /* Espaço abaixo do título */
+  color: #2c3e50;
+}
+
+.descricaodestino {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.descricaodestino h2 {
+  font-size: 28px; /* Tamanho maior para o título */
+  font-weight: bold;
+  color: #020202; /* Cor do texto */
+  text-align: center; /* Centraliza o título */
+  margin-bottom: 50px;
+}
+
+.descricaodestino p {
+  font-size: 16px; /* Aumente o tamanho do texto */
+  color: #000000;
+  margin-bottom: 0px; /* Espaçamento entre os parágrafos */
+  text-align: left;
+}
+
+/* --- Responsividade para TELAS MENORES (CELULARES: max-width: 768px) --- */
+@media (max-width: 768px) {
+  /* Footer */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .info,
+  .footer .F-pagamento {
+    margin-bottom: 15px;
+  }
+  .footer .navbar-brand {
+    order: 3;
+  }
+  .footer .navbar-brand img {
+    margin-top: 15px;
+  }
+
+  /* Cards de Veículos (carro-card) - em Mobile eles empilham */
+  .col-md-6 {
+    width: 100%;
+    padding: 15px;
+  }
+  .cards-carro {
+    flex-direction: column;
+    align-items: center;
+  }
+  .col-md-3 {
+    /* Geral para cards que usam col-md-3 no HTML */
+    width: 100% !important; /* Faz o card ocupar toda a largura */
+    max-width: 400px;
+  }
+
+  /* Rotas Ecológicas (turismo-card-horizontal) - em Mobile empilham */
+  .turismo-card-horizontal {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .turismo-card-img-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  .turismo-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .turismo-card-body {
+    padding: 15px;
+    text-align: center;
+  }
+  .turismo-card-text {
+    max-height: 300px;
+    overflow: auto;
+    text-overflow: ellipsis;
+    white-space: normal;
+    text-align: left;
+  }
+  .turismo-btn {
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  /* Vídeo (ecologica.html) - em Mobile se ajusta */
+  .video_conteiner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .video_conteiner iframe {
+    width: 90%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  /* Passeios (passeio.html) - em Mobile empilham */
+  .cards-passeio {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .passeio-card {
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .passeio-card-img-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  .passeio-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .passeio-card-content {
+    padding: 15px;
+    text-align: center;
+  }
+  .passeio-card-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .passeio-alugar {
+    list-style: none;
+    padding: 0;
+  }
+  .passeio-link a {
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  .descricao-pousada,
+  .descricaoveiculo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    gap: 10px; /* Adiciona espaço entre os elementos */
+  }
+  .descricao-pousada h2,
+  .descricaoveiculo h2 {
+    margin-bottom: 0; /* Remove a margem inferior */
+  }
+
+  /* Contato (card-contato) - em Mobile empilham */
+  @media (max-width: 768px) {
+    .card-contato {
+      width: calc(50% - 20px); /* Dois cards por linha */
+    }
+  }
+  @media (max-width: 480px) {
+    .card-contato {
+      width: 100%; /* Um card por linha */
+    }
+  }
+}
+
+/* --- Responsividade para TABLETS (769px a 1024px) --- */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* --- Navbar e Footer --- */
+  .navbar .container-fluid {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+  }
+  .navbar .nav-link {
+    font-size: 1.05em;
+    padding: 8px 12px;
+  }
+
+  .footer .footer-content {
+    /* Centraliza os itens horizontalmente */
+    justify-content: center;
+    /* Alinha os itens ao centro verticalmente (se houver variação de altura) */
+    align-items: center;
+    /* Reduz o gap para um espaçamento mais uniforme */
+    gap: 50px; /* Ajuste este valor conforme necessário */
+  }
+
+  .footer .footer-column {
+    /* Garante que as colunas se comportem bem em flexbox */
+    flex: 1;
+    text-align: center; /* Centraliza o texto dentro de cada coluna */
+  }
+
+  .footer .left-column {
+    /* Ordem do "social-icons" e "contact-info" */
+    order: 1;
+  }
+
+  .footer .center-column {
+    /* Ordem do logo */
+    order: 2;
+  }
+
+  .footer .right-column {
+    /* Ordem das formas de pagamento */
+    order: 3;
+  }
+
+  .footer .social-icons,
+  .footer .F-cartoes {
+    /* Centraliza os ícones */
+    justify-content: center;
+  }
+
+  .footer .navbar-brand {
+    /* Garante que o logo fique no meio, se necessário, ou ajuste */
+    width: auto;
+    margin-top: 0;
+  }
+
+  .footer .info,
+  .footer .F-pagamento {
+    /* Remove a largura fixa para flexibilidade na centralização */
+    flex: unset; /* Reseta o flex para que não ocupe 50% */
+    max-width: unset; /* Reseta a largura máxima */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  /* --- Carrossel Principal (index.html) --- */
+  .carousel-container {
+    max-width: 900px; /* Um tamanho bom para tablets */
+    margin: 20px auto; /* Centraliza e adiciona margem vertical */
+    height: 450px; /* Altura ajustada para tablets */
+    border-radius: 12px; /* Mantém as bordas arredondadas */
+    display: block; /* Garante que o carrossel esteja visível */
+  }
+  .carousel-item {
+    height: 100%; /* Faz o item ocupar a altura total do container do carrossel */
+  }
+  .carousel-inner img {
+    height: 100%; /* Garante que a imagem preencha o item */
+    object-fit: cover; /* Recorta a imagem para cobrir o espaço sem distorção */
+  }
+  .carousel-caption {
+    padding: 15px; /* Ajusta o padding para ser um pouco menor em tablets */
+    font-size: 0.9em; /* Tamanho da fonte ligeiramente reduzido */
+  }
+
+  /* --- Cards de Viagens (index.html) --- */
+  .container.mt-4 {
+    /* O container principal dos cards */
+    width: 90%; /* Ajusta a largura do container para tablets */
+    max-width: 960px; /* Impede que se estique demais */
+  }
+  .row {
+    justify-content: center; /* Centraliza os cards dentro da linha */
+  }
+  .col-md-4 {
+    /* Esta é a classe que você está usando para os cards na index */
+    /* Para 2 cards por linha, cada um deve ter aprox. 50% da largura,
+           menos o espaçamento. Vamos usar calc() para isso. */
+    flex: 0 0 calc(50% - 30px); /* 50% da largura do pai, menos 30px (metade do gap de 60px entre eles) */
+    max-width: calc(50% - 30px);
+    margin-top: 15px; /* Ajusta a margem superior para o espaçamento entre linhas */
+    margin-bottom: 15px; /* Adiciona margem inferior */
+    padding: 0 15px; /* Mantém um padding interno para colunas do Bootstrap */
+  }
+  .card {
+    min-height: 380px; /* Ajusta a altura mínima dos cards para um visual consistente */
+    margin: auto; /* Centraliza o card se a largura for menor que 50% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra padrão */
+  }
+  .card-img-top {
+    height: 180px; /* Altura fixa para as imagens dos cards, para padronizar */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
+  }
+  .card-title {
+    font-size: 1.3em; /* Tamanho do título do card */
+    color: #004085 !important; /* Cor padrão */
+  }
+  .card-text h1 {
+    font-size: 1.8em; /* Tamanho do preço */
+    color: #004085 !important; /* Cor padrão */
+  }
+  .card-text p {
+    font-size: 0.9em; /* Tamanho do texto da descrição */
+    -webkit-line-clamp: 3; /* Permite até 3 linhas para a descrição */
+    color: #004085 !important; /* Cor padrão */
+  }
+  .btn-container {
+    margin-top: auto; /* Empurra os botões para baixo */
+    gap: 8px; /* Reduz um pouco o espaçamento entre os botões */
+  }
+  .btn-custom {
+    padding: 8px 15px; /* Ajusta o padding dos botões */
+    font-size: 0.9em; /* Ajusta o tamanho da fonte dos botões */
+    background-color: #004085; /* Cor padrão */
+  }
+
+  /* --- Passeios (passeio.html) - Mantido como 2 cards por linha, como solicitado --- */
+  .passeio-aluguel {
+    padding: 30px 15px; /* Ajusta o padding da seção geral */
+  }
+  .passeio-aluguel .title {
+    font-size: 2.2em; /* Tamanho do título da página */
+    margin-bottom: 30px; /* Espaçamento abaixo do título */
+    color: #000000; /* Cor padrão */
+  }
+  .cards-passeio {
+    justify-content: center; /* Centraliza os cards quando houver 2 por linha */
+    gap: 20px; /* Mantém um bom espaçamento entre os cards */
+  }
+  .cards-passeio .col-md-3 {
+    /* Ajusta a largura das colunas para ter 2 cards por linha */
+    flex: 0 0 calc(50% - 25px); /* Cada card ocupa ~50% da largura, menos 25px de gap */
+    max-width: calc(50% - 25px);
+    padding: 0;
+    background-color: #fff; /* Remove cor de teste */
+    border: none; /* Remove borda de teste */
+  }
+  .passeio-card {
+    min-height: 380px; /* Altura mínima para padronizar os cards de passeio */
+    width: 100%;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra padrão */
+  }
+  .passeio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  .passeio-card-img-container {
+    height: 180px; /* Altura fixa para a imagem do card */
+    padding-bottom: 0;
+  }
+  .passeio-card-img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .passeio-card-content {
+    padding: 15px;
+    justify-content: space-between;
+  }
+  .passeio-card-title {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #000000; /* Cor padrão */
+  }
+  .passeio-alugar {
+    margin-top: auto;
+    justify-content: center;
+  }
+  .btn-customDestino {
+    padding: 10px 20px;
+    font-size: 0.95em;
+    background-color: #004085; /* Cor padrão */
+  }
+
+  /* --- Outros Ajustes para Cards de Descrição (pousada, veiculos, destino, ecologica) --- */
+  .card-praia,
+  .card-pousada,
+  .card-veiculo,
+  .card-destino,
+  .turismo-card-horizontal {
+    flex-direction: row; /* Garante que a imagem e o texto fiquem lado a lado */
+    min-height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+  }
+  .custom-carousel-container-praias,
+    .custom-carousel-container, /* Para pousadas, veículos, destinos */
+    .turismo-card-img-container {
+    width: 45%;
+    height: 100%;
+  }
+  .info-card-praia,
+  .info-cardPousada,
+  .info-cardVeiculo,
+  .info-cardDestino,
+  .turismo-card-body {
+    width: 55%;
+    padding: 25px;
+  }
+  .descricaopraia h2,
+  .descricao-pousada h2,
+  .descricaoveiculo h2,
+  .descricaodestino h2 {
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    position: static;
+  }
+  .descricaopraia p,
+  .descricao-pousada p,
+  .descricaoveiculo p,
+  .descricaodestino p {
+    font-size: 17px;
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+  /* --- Contato (contato.html) --- */
+  .container-contaro {
+    justify-content: space-around;
+  }
+  .card-contato {
+    width: calc(50% - 30px); /* Dois cards por linha */
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  /* --- Vídeo (ecologica.html) --- */
+  .video_conteiner iframe {
+    width: 80%;
+    height: 450px;
+  }
+
+  /* --- Página de Descrição de Passeio (descricaopasseio.html) --- */
+  .comparacao-destino-container {
+    width: 95%; /* Aumenta a largura do container para tablet */
+    max-width: 800px; /* Um tamanho máximo para o container principal */
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .comparacao-destino-container .title {
+    /* O título da página */
+    font-size: 2.5em; /* Ajusta o tamanho do título */
+    margin-bottom: 30px;
+  }
+
+  .card-destino {
+    flex-direction: column; /* FORÇA a imagem no topo e o conteúdo abaixo */
+    min-height: auto; /* Remove a altura mínima rígida para que o conteúdo se ajuste */
+    max-width: 760px; /* Define uma largura máxima para o card em tablet */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0; /* Remove padding que estava no .card-destino */
+  }
+
+  .card-destino .row.no-gutters {
+    flex-direction: column; /* Garante que as colunas internas também empilhem */
+  }
+
+  .card-destino .col-md-6 {
+    width: 100%; /* Faz as colunas ocuparem 100% da largura */
+    padding: 0; /* Remove o padding das colunas internas */
+  }
+
+  /* Ajustes para o carrossel de imagens dentro do card */
+  .custom-carousel-container {
+    /* Esta classe é usada em descricaopasseio.html */
+    width: 100%; /* Ocupa a largura total */
+    height: 350px; /* Altura fixa para a imagem do carrossel em tablet */
+    border-radius: 10px 10px 0 0; /* Apenas cantos superiores arredondados */
+    overflow: hidden;
+    box-shadow: none; /* Remove sombra extra se houver */
+  }
+
+  .custom-carousel-inner img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0; /* Remove bordas arredondadas da imagem se o container já tiver */
+  }
+
+  /* Ajustes para o conteúdo de texto e botão abaixo da imagem */
+  .info-cardDestino {
+    background-color: #ffffff; /* Fundo branco para o bloco de informações */
+    padding: 25px; /* Padding interno para o conteúdo */
+    border-radius: 0 0 10px 10px; /* Apenas cantos inferiores arredondados */
+    box-shadow: none; /* Remove sombra extra */
+    width: 100%; /* Ocupa a largura total */
+  }
+
+  .descricaodestino {
+    margin-top: 0; /* Zera margem superior, já que a imagem está acima */
+    flex: none; /* Remove flex-grow para que o conteúdo não se estique */
+  }
+
+  .descricaodestino h2 {
+    font-size: 2em; /* Tamanho maior para o título do passeio */
+    margin-top: 0;
+    margin-bottom: 20px; /* Ajusta a margem inferior */
+    position: static; /* Remove a posição relativa que estava movendo o título para cima */
+    text-align: center; /* Centraliza o título */
+  }
+
+  .descricaodestino p {
+    font-size: 1.1em; /* Aumenta o tamanho do texto da descrição para legibilidade */
+    line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+    margin-bottom: 20px; /* Espaçamento antes do botão */
+    text-align: left; /* Mantém alinhamento à esquerda */
+  }
+
+  .info-cardDestino .btn-container {
+    /* Especifica o btn-container dentro de info-cardDestino */
+    margin-top: 15px; /* Adiciona margem superior para separar do texto */
+    padding-top: 15px; /* Adiciona padding-top para visual limpo */
+    border-top: 1px solid #eee; /* Linha sutil para separar o botão do texto */
+  }
+
+  .btn-custom {
+    padding: 12px 25px; /* Aumenta o padding do botão para tablet */
+    font-size: 1.1em; /* Aumenta a fonte do botão */
+  }
+
+  /* --- Página de Pousada (pousada.html) --- */
+  .comparacao-pousadas-container {
+    width: 95%; /* Aumenta a largura do container para tablet */
+    max-width: 800px; /* Um tamanho máximo para o container principal */
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .comparacao-pousadas-container .title {
+    /* O título da página */
+    font-size: 2.5em; /* Ajusta o tamanho do título */
+    margin-bottom: 30px;
+  }
+
+  .card-pousada {
+    flex-direction: column; /* FORÇA a imagem no topo e o conteúdo abaixo */
+    min-height: auto; /* Remove a altura mínima rígida para que o conteúdo se ajuste */
+    max-width: 760px; /* Define uma largura máxima para o card em tablet */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0; /* Remove padding que estava no .card-pousada */
+  }
+
+  .card-pousada .row.no-gutters {
+    flex-direction: column; /* Garante que as colunas internas também empilhem */
+  }
+
+  .card-pousada .col-md-6 {
+    width: 100%; /* Faz as colunas ocuparem 100% da largura */
+    padding: 0; /* Remove o padding das colunas internas */
+  }
+
+  /* Ajustes para o carrossel de imagens dentro do card */
+
+  .custom-carousel-container {
+    width: 100%; /* Ocupa a largura total */
+    height: 350px; /* Altura fixa para a imagem do carrossel em tablet */
+    border-radius: 10px 10px 0 0; /* Apenas cantos superiores arredondados */
+    overflow: hidden;
+    box-shadow: none; /* Remove sombra extra se houver */
+  }
+
+  .custom-carousel-inner img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0; /* Remove bordas arredondadas da imagem se o container já tiver */
+  }
+
+  /* Ajustes para o conteúdo de texto e botão abaixo da imagem */
+  .info-cardPousada {
+    background-color: #ffffff; /* Fundo branco para o bloco de informações */
+    padding: 25px; /* Padding interno para o conteúdo */
+    border-radius: 0 0 10px 10px; /* Apenas cantos inferiores arredondados */
+    box-shadow: none; /* Remove sombra extra */
+    width: 100%; /* Ocupa a largura total */
+  }
+
+  .descricao-pousada {
+    margin-top: 0; /* Zera margem superior, já que a imagem está acima */
+    flex: none; /* Remove flex-grow para que o conteúdo não se estique */
+  }
+
+  .descricao-pousada h2 {
+    font-size: 2em; /* Tamanho maior para o título da pousada */
+    margin-top: 0;
+    margin-bottom: 20px; /* Ajusta a margem inferior */
+    position: static; /* Remove a posição relativa que estava movendo o título para cima */
+    text-align: center; /* Centraliza o título */
+  }
+
+  .descricao-pousada p {
+    font-size: 1.1em; /* Aumenta o tamanho do texto da descrição para legibilidade */
+    line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+    margin-bottom: 20px; /* Espaçamento antes do botão */
+    text-align: left; /* Mantém alinhamento à esquerda */
+  }
+
+  .info-cardPousada .btn-container {
+    /* Especifica o btn-container dentro de info-cardPousada */
+    margin-top: 15px; /* Adiciona margem superior para separar do texto */
+    padding-top: 15px; /* Adiciona padding-top para visual limpo */
+    border-top: 1px solid #eee; /* Linha sutil para separar o botão do texto */
+  }
+
+  .btn-custom {
+    padding: 12px 25px; /* Aumenta o padding do botão para tablet */
+    font-size: 1.1em; /* Aumenta a fonte do botão */
+  }
+  /* --- Página de Veículos (veiculos.html) --- */
+  .carro-aluguel {
+    padding: 30px 15px; /* Ajusta o padding da seção geral */
+  }
+
+  .carro-aluguel .title {
+    font-size: 2.2em; /* Tamanho do título da página */
+    margin-bottom: 30px; /* Espaçamento abaixo do título */
+  }
+
+  .cards-carro {
+    justify-content: center; /* Centraliza os cards quando houver 2 por linha */
+    gap: 20px; /* Mantém um bom espaçamento entre os cards */
+  }
+
+  /* Ajusta a largura das colunas para ter 2 cards por linha em tablets */
+  .cards-carro .col-md-3 {
+    /* Especifica mais para não afetar outros col-md-3 se houver */
+    flex: 0 0 calc(50% - 25px); /* Cada card ocupa ~50% da largura, menos 25px de gap */
+    max-width: calc(50% - 25px); /* Garante que não ultrapasse 50% */
+    padding: 0; /* Remove padding extra do Bootstrap para melhor controle */
+  }
+
+  .carro-card {
+    min-height: 380px; /* Altura mínima para padronizar os cards de veículo */
+    width: 100%; /* Garante que o card ocupe a largura da sua coluna */
+    margin: auto; /* Centraliza o card se a largura da coluna for menor */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra mais destacada em tablet */
+  }
+
+  .carro-card-img-container {
+    height: 180px; /* Altura fixa para a imagem do card */
+    padding-bottom: 0; /* Remove padding-bottom se estiver definindo a altura direta */
+  }
+
+  .carro-card-img {
+    height: 100%; /* Preenche a altura do container */
+    object-fit: cover; /* Recorta a imagem para cobrir o espaço */
+  }
+
+  .carro-card-content {
+    padding: 15px; /* Ajusta o padding interno do conteúdo do card */
+    display: flex; /* Para flexionar o conteúdo */
+    flex-direction: column; /* Coloca elementos em coluna */
+    justify-content: space-between; /* Distribui o espaço entre título e botão */
+    flex-grow: 1; /* Permite que o conteúdo cresça e ocupe o espaço disponível */
+  }
+
+  .carro-card-title {
+    font-size: 1.2em; /* Tamanho do título do veículo */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+  }
+
+  .carro-alugar {
+    margin-top: auto; /* Empurra o botão para a parte inferior do card */
+    justify-content: center; /* Centraliza o botão */
+    width: 100%; /* Garante que o ul ocupe a largura total para centralizar */
+  }
+
+  .carro-link .btn {
+    /* Para o botão "Saber Mais" */
+    padding: 10px 20px; /* Padding para o botão */
+    font-size: 0.95em; /* Tamanho da fonte do botão */
+    width: 100%; /* Faz o botão ocupar a largura disponível no item de lista */
+    max-width: 150px; /* Limita a largura máxima do botão */
+  }
+
+  .valor {
+    /* Se você tiver o campo "valor" dentro do card */
+    min-width: auto; /* Deixa o tamanho automático */
+    height: auto; /* Deixa a altura automática */
+    padding: 8px 12px; /* Ajusta o padding para ser mais compacto */
+    font-size: 0.9em; /* Reduz um pouco o tamanho da fonte */
+  }
+  /* --- Página de Descrição de Carro (descricaocarro.html) --- */
+  .comparacao-veiculos-container {
+    width: 95%; /* Aumenta a largura do container para tablet */
+    max-width: 800px; /* Um tamanho máximo para o container principal */
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .comparacao-veiculos-container .title {
+    /* O título da página */
+    font-size: 2.5em; /* Ajusta o tamanho do título */
+    margin-bottom: 30px;
+    color: #000000; /* Garante que a cor seja preta e não a de teste */
+  }
+
+  .card-veiculo {
+    flex-direction: column; /* FORÇA a imagem no topo e o conteúdo abaixo */
+    min-height: auto; /* Remove a altura mínima rígida para que o conteúdo se ajuste */
+    max-width: 760px; /* Define uma largura máxima para o card em tablet */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0; /* Remove padding que estava no .card-veiculo */
+  }
+
+  .card-veiculo .row.no-gutters {
+    flex-direction: column; /* Garante que as colunas internas também empilhem */
+  }
+
+  .card-veiculo .col-md-6 {
+    width: 100%; /* Faz as colunas ocuparem 100% da largura */
+    padding: 0; /* Remove o padding das colunas internas */
+  }
+
+  /* Ajustes para o carrossel de imagens dentro do card */
+  /* Note: O HTML da descrição do carro usa `custom-carousel-container` e `custom-carousel-inner`,
+       que são as mesmas classes da descrição de passeio e pousada. */
+  .custom-carousel-container {
+    width: 100%; /* Ocupa a largura total */
+    height: 350px; /* Altura fixa para a imagem do carrossel em tablet */
+    border-radius: 10px 10px 0 0; /* Apenas cantos superiores arredondados */
+    overflow: hidden;
+    box-shadow: none; /* Remove sombra extra se houver */
+  }
+
+  .custom-carousel-inner img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0; /* Remove bordas arredondadas da imagem se o container já tiver */
+  }
+
+  /* Ajustes para o conteúdo de texto e botão abaixo da imagem */
+  .info-cardVeiculo {
+    background-color: #ffffff; /* Fundo branco para o bloco de informações */
+    padding: 25px; /* Padding interno para o conteúdo */
+    border-radius: 0 0 10px 10px; /* Apenas cantos inferiores arredondados */
+    box-shadow: none; /* Remove sombra extra */
+    width: 100%; /* Ocupa a largura total */
+  }
+
+  .descricaoveiculo {
+    margin-top: 0; /* Zera margem superior, já que a imagem está acima */
+    flex: none; /* Remove flex-grow para que o conteúdo não se estique */
+  }
+
+  .descricaoveiculo h2 {
+    font-size: 2em; /* Tamanho maior para o título do veículo */
+    margin-top: 0;
+    margin-bottom: 20px; /* Ajusta a margem inferior */
+    position: static; /* Remove a posição relativa que estava movendo o título para cima */
+    text-align: center; /* Centraliza o título */
+  }
+
+  .descricaoveiculo p {
+    font-size: 1.1em; /* Aumenta o tamanho do texto da descrição para legibilidade */
+    line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+    margin-bottom: 20px; /* Espaçamento antes do botão */
+    text-align: left; /* Mantém alinhamento à esquerda */
+  }
+
+  .info-cardVeiculo .btn-container {
+    /* Especifica o btn-container dentro de info-cardVeiculo */
+    margin-top: 15px; /* Adiciona margem superior para separar do texto */
+    padding-top: 15px; /* Adiciona padding-top para visual limpo */
+    border-top: 1px solid #eee; /* Linha sutil para separar o botão do texto */
+  }
+
+  .btn-custom {
+    padding: 12px 25px; /* Aumenta o padding do botão para tablet */
+    font-size: 1.1em; /* Aumenta a fonte do botão */
+  }
+}
+/* Estilos para o Footer */
+.footer {
+  background-color: #347c9b; /* Exemplo de cor de fundo, ajuste se necessário */
+  color: #000000; /* Cor do texto padrão */
+  padding: 30px 0; /* Espaçamento superior e inferior */
+}
+
+.footer-content {
+  display: flex; /* Transforma o container em um flexbox */
+  justify-content: space-around; /* Distribui o espaço entre as colunas */
+  align-items: flex-start; /* Alinha o topo do conteúdo de cada coluna */
+  flex-wrap: wrap; /* Permite que as colunas quebrem linha em telas menores */
+  gap: 20px; /* Espaçamento entre as colunas */
+}
+
+.footer-column {
+  flex: 1; /* Cada coluna ocupa uma parte igual do espaço disponível */
+  min-width: 280px; /* Largura mínima para cada coluna antes de quebrar a linha */
+  padding: 10px; /* Espaçamento interno dentro de cada coluna */
+  display: flex; /* Transforma cada coluna em um flexbox */
+  flex-direction: column; /* Para empilhar o conteúdo verticalmente dentro da coluna */
+  align-items: center; /* Centraliza o conteúdo dentro da coluna por padrão */
+}
+
+/* --- COLUNA DA ESQUERDA --- */
+.left-column {
+  align-items: flex-start; /* Alinha o conteúdo à esquerda */
+}
+
+.left-column .social-icons {
+  margin-bottom: 10px; /* Espaçamento entre os ícones e o email */
+}
+
+.left-column .social-icons a {
+  color: #ffffff; /* Cor dos ícones sociais */
+  font-size: 1.5em; /* Tamanho dos ícones sociais */
+  margin-right: 10px; /* Espaçamento entre os ícones */
+}
+
+.left-column .social-icons a:hover {
+  color: #0056b3; /* Cor dos ícones sociais ao passar o mouse */
+}
+
+.left-column .contact-info {
+  font-size: 0.9em;
+  color: #ffffff;
+  text-align: left;
+}
+
+/* --- COLUNA CENTRAL (LOGO) --- */
+.center-column {
+  align-items: center; /* Garante que a logo fique centralizada */
+}
+
+.center-column .logo-img {
+  max-width: 100%; /* Garante que a imagem da logo seja responsiva */
+  height: auto; /* Mantém a proporção da imagem */
+  /* O tamanho inicial foi definido diretamente no HTML para sua conveniência */
+}
+
+/* --- COLUNA DA DIREITA (FORMAS DE PAGAMENTO) --- */
+.right-column {
+  align-items: center; /* Alinha o conteúdo à direita */
+}
+
+.right-column .payment-title {
+  font-size: 1.2em;
+  margin-bottom: 10px; /* Espaçamento entre o título e os ícones */
+  color: #ffffff;
+  text-align: center;
+  width: 100%; /* Garante que o título ocupe a largura da coluna para alinhamento */
+}
+
+.right-column .F-cartoes {
+  display: flex; /* Transforma os cartões em flexbox */
+  gap: 10px; /* Espaçamento entre os ícones dos cartões */
+  justify-content: center; /* Alinha os ícones à direita dentro da coluna */
+  flex-wrap: wrap; /* Permite que os ícones quebrem linha se houver muitos */
+}
+
+.right-column .F-cartao {
+  max-width: 60px; /* Limita a largura máxima dos ícones de cartão */
+  height: auto; /* Mantém a proporção dos ícones de cartão */
+}

@@ -1,0 +1,38 @@
+{% extends 'center.html' %} {% block content %}
+<div class="layout-container mt-4">
+  <div class="row layout-cards">
+    {% for passeios in passeio %}
+    <div class="col-md-4 mt-2">
+      <div class="card-custom h-100">
+        {% if passeios.imagem_passeio %}
+        <img
+          src="{{ passeios.imagem_reformulada.url }}"
+          class="card-custom-img-top"
+          alt="{{ passeio.titulo_passeio }}"
+        />
+        {% endif %}
+        <div class="card-custom-body d-flex flex-column">
+          <h5 class="card-custom-title">{{ passeios.titulo_passeio }}</h5>
+          <div class="card-custom-text">
+            <p>{{ passeios.descricao }}</p>
+          </div>
+          <div class="mt-auto card-custom-btns">
+            <a
+              href="{% url 'viagens:description_passeios' passeios.pk %}"
+              class="btn-primary-custom"
+              target="_blank"
+              >Saber mais</a
+            >
+            <a
+              href="{% url 'viagens:description_contato' %}"
+              class="btn-primary-custom"
+              >Contato</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
